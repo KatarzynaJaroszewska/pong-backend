@@ -1,8 +1,9 @@
 import { Module, MiddlewareConsumer, RequestMethod } from "@nestjs/common";
 import { AppController } from "./app.controller";
+import {PongModule} from "./gateway/pong.module";
 
 @Module({
-  imports: [],
+  imports: [PongModule],
   controllers: [AppController],
   providers: [],
 })
